@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+      overflow: hidden;
+      width: 350px;
+      text-align: center;
+      padding: 25px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .profile-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #667eea;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .profile-card h2 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .profile-card p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      background: #667eea;
+      color: #fff;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #5a67d8;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      margin: 0 8px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #667eea;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #764ba2;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="https://via.placeholder.com/120" alt="User Photo">
+    <h2>Home Page</h2>
+    <p>Spring Boot Developer | Java Enthusiast</p>
+    <a href="#" class="btn">Follow</a>
+
+    <div class="social-links">
+      <a href="#">🌐</a>
+      <a href="#">🐦</a>
+      <a href="#">💼</a>
+    </div>
+  </div>
+
+</body>
+</html>
